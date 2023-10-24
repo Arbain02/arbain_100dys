@@ -1,0 +1,25 @@
+
+package arbain_day16;
+
+public class Arbain_day16 {
+
+  
+    public static void main(String[] args) {
+       //Deklarasi variabel
+       int tinggi = 5;
+       
+       //perulangan untuk membuat baris
+       for (int i = tinggi; i >= 1; i--) {
+           
+       //perulangan untuk membuat kolom 
+       
+       for(int j=1;j<= i;j++) {
+       //mencetak karakter bintang
+           System.out.println("*");
+       }
+       //mencetak baris baru
+           System.out.println();
+       }
+    }
+    
+}
