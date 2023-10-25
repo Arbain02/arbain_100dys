@@ -1,0 +1,19 @@
+package arbain_day17;
+
+public class Arbain_day17 {
+
+   
+    public static void main(String[] args) {
+       
+        int x = 10;
+
+        String pesan = x > 0 ? "Angka bulat positif" : "Angka bulat negatif";
+
+        System.out.println(pesan);
+    }
+}
+
+          
+    
+    
+
