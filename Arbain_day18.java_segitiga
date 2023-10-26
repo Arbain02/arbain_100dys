@@ -1,0 +1,15 @@
+package arbain_day18;
+import java.util.Scanner;
+public class Arbain_day18 {
+
+    public static void main(String[] args) {
+       Scanner sc = new Scanner (System.in);
+        System.out.println("masukkan luas alas = ");
+        int alas = sc.nextInt();
+        System.out.println("masukkan tinggi = ");
+        int tinggi = sc.nextInt();
+        double luas = (0.5*alas*tinggi);
+        System.out.println("luas segitiga adalah = "+luas);
+    }
+    
+}
