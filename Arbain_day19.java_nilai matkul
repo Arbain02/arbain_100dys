@@ -1,0 +1,23 @@
+package arbain_day19;
+import java.util.Scanner;
+public class Arbain_day19 {
+
+    
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       double nilai = sc.nextDouble();
+       if (nilai >=80){
+           System.out.println("A");
+       } else if (nilai >60){
+           System.out.println("B");
+       }else if (nilai >40){
+           System.out.println("C");    
+       }else  {
+           System.out.println("E");    
+       }
+    }
+    
+}
+
+//codingan diatas untuk mengkongversi nilai mata kuliah dari nilai interval 100 ke nilai huruf dengan urutan masing-masing diatas.
+
