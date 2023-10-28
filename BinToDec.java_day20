@@ -1,0 +1,24 @@
+package arbain_day20;
+import java.util.Scanner;
+public class BinToDec {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Membaca bilangan biner dari input user
+        System.out.print("Masukkan bilangan biner: ");
+        String biner = input.nextLine();
+
+        // Menghitung nilai desimal
+        int desimal = 0;
+        for (int i = biner.length() - 1; i >= 0; i--) {
+            if (biner.charAt(i) == '1') {
+                desimal += Math.pow(2, biner.length() - i - 1);
+            }
+        }
+
+        // Menampilkan hasil konversi
+        System.out.println("Nilai desimal: " + desimal);
+    }
+}
+
