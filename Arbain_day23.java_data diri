@@ -1,0 +1,27 @@
+package arbain_day23;
+
+public class Arbain_day23 {
+
+    
+    public static void main(String[] args) {
+        
+        // Deklarasi variabel
+        String nama = "Arbain";
+        String nim = "D0222041";
+        String jurusan = "Teknik Informatika";
+        String universitas = "Universitas Sulawesi Barat";
+        int tahun_masuk = 2022;
+
+        // Cetak data diri
+        System.out.println("Nama: " + nama);
+        System.out.println("Nim: " + nim);
+        System.out.println("Jurusan: " + jurusan);
+        System.out.println("Universitas: " + universitas);
+        System.out.println("Tahun masuk: " + tahun_masuk);
+    }
+}
+
+        
+    
+    
+
