@@ -1,0 +1,61 @@
+
+package day34_aljabar;
+import java.util.Scanner;
+public class main {
+    
+    public static void main(String[] args) {
+
+        // Deklarasi variabel
+        double a = 2.0;
+        double b = 3.0;
+        double c = 5.0;
+
+        // Penyelesaian persamaan kuadrat
+        double discriminant = b * b - 4 * a * c;
+        if (discriminant > 0) {
+            double x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+            double x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+            System.out.println("x1 = " + x1);
+            System.out.println("x2 = " + x2);
+        } else if (discriminant == 0) {
+            double x = -b / (2 * a);
+            System.out.println("x = " + x);
+        } else {
+            System.out.println("Persamaan tidak memiliki solusi");
+        }
+
+        // Penyelesaian persamaan linier
+        double x = -c / b;
+        System.out.println("x = " + x);
+
+        // Penyelesaian pertidaksamaan kuadrat
+        if (discriminant > 0) {
+            System.out.println("Pertidaksamaan memiliki dua solusi");
+        } else if (discriminant == 0) {
+            System.out.println("Pertidaksamaan memiliki satu solusi");
+        } else {
+            System.out.println("Pertidaksamaan tidak memiliki solusi");
+        }
+
+        // Penyelesaian fungsi
+        double y = a * x * x + b * x + c;
+        System.out.println("y = " + y);
+
+        // Grafik fungsi
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan nilai x minimum: ");
+        double xMin = input.nextDouble();
+        System.out.print("Masukkan nilai x maksimum: ");
+        double xMax = input.nextDouble();
+        System.out.print("Masukkan interval x: ");
+        double interval = input.nextDouble();
+      
+            System.out.println("(x, y) = (" + x + ", " + y + ")");
+        }
+    }
+
+
+
+
+    
+
